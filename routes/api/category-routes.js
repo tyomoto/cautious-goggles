@@ -21,6 +21,9 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryInfo = await Category.findOne({
+      where: {
+        id: req.params.id
+      },
       include: [{ model: Product }]
     });
     res.status(200).json(categoryInfo);
@@ -55,7 +58,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id,
       },
     })
-    res.status(200).json(categoryInfo);
+    res.status(200).json("category has been deleted");
   } catch (err) {
     res.status(500).json(err);
   }
