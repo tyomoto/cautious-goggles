@@ -1,5 +1,5 @@
-# 12 SQL: Employee Tracker
-## Module 12 Challenge
+# 13 Object-Related Mapping (ORM): E-Commerce Back End
+## Module 13 Challenge
 
 ## Description
 The goal of this challenge was to build a back end for an e-commerce site by modifying some starter code that I was provided with. I was in charge of building the back end working with Express.js and Sequelize using a MYSQL database.
